@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mera Digital Portfolio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            padding: 30px 25px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+            text-align: center;
+            max-width: 380px;
+            width: 100%;
+        }
+
+        /* Profile Photo Style */
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid #007bff;
+        }
+
+        h1 {
+            color: #1a252f;
+            font-size: 24px;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            color: #007bff;
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Contact Details Box */
+        .contact-info {
+            background-color: #f8f9fa;
+            padding: 12px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #333;
+            text-align: left;
+        }
+
+        .contact-info div {
+            margin-bottom: 5px;
+        }
+
+        .contact-info div:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Social Media Links / Buttons */
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        /* Social Media Specific Colors */
+        .btn-instagram { background: #e90c0c; }
+        .btn-whatsapp { background: #08f05d; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- 1. myphoto.jpg.jpeg -->
+        <img src="myphoto.jpg" onerror="this.src='https://via.placeholder.com/110';" alt="Apni Photo" class="profile-img">
+
+        <!-- 2. Lokendra Singh (tecky) -->
+        <h1>Lokendra Singh (tecky)</h1>
+        <div class="subtitle">Freelancer / Teck Expert</div>
+        
+        <p>I am a tech expert who can play with tech machines</p>
+
+        <!-- 3. Contact Details Badlein -->
+        <div class="contact-info">
+            <div>📧 <strong>Email:</strong> lokendra.sodha.works@gmail.com</div>
+            <div>📞 <strong>Phone:</strong> +91 8690050892</div>
+            <div>📍 <strong>City:</strong> Jaisalmer, India</div>
+        </div>
+
+        <!-- 4. Social Media Links Add Karein -->
+        <div class="btn-container">
+            <!-- https://www.instagram.com/lokendra.singh_rajput?stkn=MTV1Ym50YnNtamUzag== -->
+            <a href="https://instagram.com" target="_blank" class="btn btn-instagram">Instagram</a>
+            
+            <!-- WhatsApp Chat Link (Apna number 91XXXXXXXXXX format me likhein) -->
+            <a href="https://wa.me/918690050892" target="_blank" class="btn btn-whatsapp">WhatsApp Par Message Karein</a>
+        </div>
+    </div>
+
+</body>
+</html>
